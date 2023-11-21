@@ -8,3 +8,10 @@ position in the tuple
 """
 
 people=("John","Tyler","Dash","Kieran","Jayson","Tomoki","Minji","Dawson","Hewitt","Josh","Anson","Cole")
+user_input = int(input("Enter a number less than 10: "))
+if 0 <= user_input < 10:
+    print("Element at position", user_input, "is:", people[user_input])
+else:
+    print("Invalid input. Please enter a number less than 10.")
+
+

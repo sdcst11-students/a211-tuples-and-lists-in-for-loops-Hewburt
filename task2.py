@@ -22,9 +22,15 @@ Enter a name: Lebron
 That name is on the list
 """
 
-nameList = ("Lebron","Kobe","Michale","Shaq","Dennis")
-x=input("Enter a name")
-if x in nameList:
-     print("that name is on the list")
+
+name_list = ("John", "Jane", "Alice", "Bob", "Charlie")
+user_input = input("Enter a name: ")
+name_found = False
+for name in name_list:
+    if user_input == name:
+        name_found = True
+        break
+if name_found:
+    print("That name is on the list")
 else:
-    print("that name is not on the list")
+    print("That name is not on the list")
